@@ -1,7 +1,11 @@
 body {
     margin: 0;
-    font-size: 120%;
+    font-size: 110%;
     font-family: 'Montserrat', sans-serif;
+}
+content {
+    display: flex;
+    flex-wrap: wrap;
 }
 nav {
     border: 1px solid black;
@@ -11,9 +15,10 @@ ul {
     text-align: center;
     list-style: none;
     padding: 0px;
+    margin: 0px;
 }
 li {
-    margin-bottom: 10px;
+    margin-top: 10px;
     background-color: #57554b;
 }
 header {
@@ -22,6 +27,37 @@ header {
     text-align: center;
     padding-bottom: 20px;
 }
+main {
+    text-align: center;
+    background-color: #ebe8d1;
+    word-wrap: break-word;
+    padding: 0px 30px 30px 30px;
+}
+aside {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.article-bottom {
+    border-top: 3px solid #898673;
+    border-bottom: 3px solid #898673;
+    background-color: #c4c0a7;
+}
+.article-normo {
+    border-top: 3px solid #898673;
+    background-color: #c4c0a7;
+    padding: 0;
+}
+section {
+    text-align: center;
+    margin-bottom: 30px
+}
+footer {
+    background-color: #57554b;
+    padding: 10px 0px; 10px 0px;
+}
+p {
+    margin: 0;
+}
 a {
     text-decoration: none;
     color: white;
@@ -29,26 +65,20 @@ a {
 a:hover {
     color:#cbeada;
 }
-main {
-    text-align: center;
-    background-color: #c4c0a7;
-    word-wrap: break-word;
-    padding: 0px 30px 30px 30px;
+
+/*MOBILE STUFFIES*/
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  article {
+        width: 100%;
+    } 
 }
-aside {
-    text-align: center;
-}
-.article-bottom {
-    border-top: 3px solid black;
-    border-bottom: 3px solid black;
-    background-color: #c4c0a7;
-}
-.article-normo {
-    border-top: 3px solid black;
-    background-color: #c4c0a7;
-    padding: 0;
-    
-}
-p {
-    margin: 0;
+
+/*TABLET STUFFIES*/
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    article {
+        box-sizing: border-box;
+        width: 50%;
+        border: 3px solid #898673;
+    } 
 }
